@@ -8,19 +8,20 @@
         "card_bg": "#FFF3E0",
         "text_button_bg": "#FF9800",
         "description": "Support students by donating educational supplies. Every child deserves access to quality education!",
-        "price": 200
+        "price": "$200"
+
        
       },
       {
         "id": 2,
         "picture": "https://i.ibb.co/PDCd5dy/Health.png",
-        "title": "Blood Donation Camp",
+        "title": "Vaccination Camp",
         "category": "Health",
         "category_bg": "#FF5733",
         "card_bg": "#EAEAEA",
         "text_button_bg": "#FF5733",
-        "description": "Join us in saving lives by donating blood at our blood donation camp. Your donation can make a huge difference!",
-        "price": 500
+        "description": "Contribute to a healthier community by supporting our vaccination camp. Protect yourself and others!",
+        "price": "$500"
         
       },
       {
@@ -32,7 +33,7 @@
         "card_bg": "#F5F5F5",
         "text_button_bg": "#6B8E23",
         "description": "Help us collect non-perishable food items for the homeless in our community. Every contribution matters!",
-        "price": 300
+        "price": "$300"
         
       },
       {
@@ -44,19 +45,18 @@
         "card_bg": "#ECEFF1",
         "text_button_bg": "#333333",
         "description": "Donate gently used clothing items to help families in need. Your old clothes can bring warmth and comfort.",
-        "price": 500
-        
+        "price": "$200"
       },
       {
         "id": 5,
         "picture": "https://i.ibb.co/qmD9zfK/hand-cupping-stethoscope-health-concept.jpgg",
-        "title": "Vaccination Camp",
+        "title": "Blood Donation Camp",
         "category": "Health",
         "category_bg": "#FF5733",
         "card_bg": "#EAEAEA",
         "text_button_bg": "#FF5733",
-        "description": "Contribute to a healthier community by supporting our vaccination camp. Protect yourself and others!",
-        "price": 700
+        "description":"Join us in saving lives by donating blood at our blood donation camp. Your donation can make a huge difference!",
+        "price": "$700"
       },
       {
         "id": 6,
@@ -67,7 +67,7 @@
         "card_bg": "#FFF3E0",
         "text_button_bg": "#FF9800",
         "description": "Help talented students pursue their dreams through our scholarship fundraiser. Education changes lives!",
-        "price": 400
+        "price":"$500"
       },
       {
         "id": 7,
@@ -78,7 +78,7 @@
         "card_bg": "#ECEFF1",
         "text_button_bg": "#333333",
         "description": "Provide warm clothing to those in need during the cold months. Your donation can save lives!",
-        "price": 500
+        "price":"$200"
       },
       {
         "id": 8,
@@ -89,7 +89,7 @@
         "card_bg": "#F5F5F5",
         "text_button_bg": "#6B8E23",
         "description": "Support our community kitchen project to provide meals to the hungry. No one should go to bed hungry!",
-        "price": 500
+        "price": "$500"
       },
       {
         "id": 9,
@@ -100,7 +100,7 @@
         "card_bg": "#FFF3E0",
         "text_button_bg": "#FF9800",
         "description": "Donate books to enrich the minds of students. Reading opens doors to new worlds!",
-        "price": 600
+        "price":"$600"
        
       },
       {
@@ -112,7 +112,7 @@
         "card_bg": "#EAEAEA",
         "text_button_bg": "##FF5733",
         "description": "Contribute to community health by attending our health checkup camp. Prevention is better than cure!",
-        "price": 400
+        "price": "$200"
        
       },
       {
@@ -124,7 +124,7 @@
         "card_bg": "#F5F5F5",
         "text_button_bg": "#6B8E23",
         "description": "Support our community soup kitchen to provide nutritious meals to those in need. Hunger knows no season!",
-        "price": 300
+        "price": "$200"
        
       },
       {

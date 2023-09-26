@@ -6,7 +6,7 @@ import Cards from '../Cards/Cards';
 const Home = () => {
     return (
         <div>
-            <Header></Header>
+            {/* <Header></Header> */}
             <Banner></Banner>
             <Cards></Cards>
         </div>
