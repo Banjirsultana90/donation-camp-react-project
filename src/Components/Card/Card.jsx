@@ -20,8 +20,8 @@ const Card = ({ card }) => {
     return (
         <div className=''>
             <div className=" shadow-xl" style={cardStyle}>
-                <figure className=" w-full ">
-                    <img src={picture} alt="Shoes" className="" />
+                <figure className=" w-full  ">
+                    <img  src={picture} alt="Shoes" className="h-30 w-full" />
                 </figure>
                 <div className="pt-2" >
                     <h2 className="w-1/3 rounded shadow-md ml-4 font-extrabold" style={categoryStyle}>{category}</h2>
