@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { getstoreddonation } from '../../Utility/localstorage';
-
 const Donation = () => {
     const cards = useLoaderData()
     const [donation, setDonation] = useState([])
-
+    const [seeall,setseeall]=useState(4)
     useEffect(() => {
         const storeddonationid = getstoreddonation()
-
-
         if (cards.length > 0) {
             const itemdonated = [];
             for (const id of storeddonationid) {
@@ -18,19 +15,13 @@ const Donation = () => {
                     itemdonated.push(card)
                 }
             }
-            setDonation(itemdonated)
-            // console.log(setDonation)
-            // console.log(cards,itemdonated,storeddonationid)
+            setDonation(itemdonated)      
         }
-
-
-    }
-
-        ,
+    } ,
         [])
     return (
         <><div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2'>
-            {donation.map(card => <div key={card.id}>
+            {donation.slice(0,seeall).map(card => <div key={card.id}>
 
                 <div className='flex gap-2'>
                     <div className='w-1/3 '>
@@ -45,16 +36,14 @@ const Donation = () => {
 
                     </div>
                 </div>
-              
-
             </div>)}
-
+            
         </div>
-        <div className='mt-5'> <button className='bg-green-700 rounded-md p-2 w-24'>See All</button>
+
+        <div className={seeall===cards.length && 'hidden'}>
+             <button onClick={()=>setseeall(cards.length)} className='bg-green-700 rounded-md p-2 w-24 mt-5'>See All</button>
          </div>
         </>
-        
-        
     );
 };
 

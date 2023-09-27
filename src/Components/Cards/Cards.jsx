@@ -3,6 +3,7 @@ import Card from '../Card/Card';
 
 
 const Cards = () => {
+    const [searchcard ,setsearchcard]=useState([])
     const [cards ,setcards]=useState([])
     useEffect(()=>{
         fetch ('data.json')
