@@ -11,6 +11,7 @@ import Error from './Pages/Error/Error.jsx';
 import Home from './Components/Home/Home.jsx';
 import Carddetails from './Components/Carddetails/Carddetails.jsx';
 import Donation from './Pages/Donation/Donation.jsx';
+import Statistics from './Pages/Statistics/Statistics.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,6 +32,11 @@ const router = createBrowserRouter([
       element:<Donation></Donation>,
       loader:()=>fetch('/data.json')
 
+
+    },
+    {
+      path:"/Statistics",
+      element:<Statistics></Statistics>
 
     }
   ]
