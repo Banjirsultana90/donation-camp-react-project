@@ -1,11 +1,11 @@
-// import React from 'react';
+
 
 import { Link } from "react-router-dom";
 
 const Card = ({ card }) => {
     const {id, picture, category, title, description, price, category_bg, card_bg,text_button_bg } = card;
 
-    // Create an inline style object with the background colors
+    
     const cardStyle = {
         backgroundColor: card_bg,
     };

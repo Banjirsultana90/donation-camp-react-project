@@ -5,6 +5,7 @@ const Donation = () => {
     const cards = useLoaderData()
     const [donation, setDonation] = useState([])
     const [seeall,setseeall]=useState(4)
+    
     useEffect(() => {
         const storeddonationid = getstoreddonation()
         if (cards.length > 0) {
@@ -19,6 +20,7 @@ const Donation = () => {
         }
     } ,
         [])
+        
     return (
         <><div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2'>
             {donation.slice(0,seeall).map(card => <div key={card.id}>
