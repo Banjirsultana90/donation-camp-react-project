@@ -29,27 +29,31 @@ const Donation = () => {
         ,
         [])
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5'> 
-            {/* <h2>Donation:{donation.length}</h2> */}
-            {
-                donation.map(card => <div key={card.id} >
-                    <div className="card card-side bg-base-100 shadow-xl ">
-                        <figure><img src={card.picture} alt="Movie" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title">{card.category}</h2>
-                            <h2 className="card-title">{card.title}</h2>
-                            <p>{card.description}</p>
-                            <p>{card.price}</p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-primary">View Details</button>
-                            </div>
-                        </div>
-                    </div>
+        <><div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2'>
+            {donation.map(card => <div key={card.id}>
 
-                </div>)
-            }
-            <button className='btn btn-secondary'>See All</button>
+                <div className='flex gap-2'>
+                    <div className='w-1/3 '>
+                        <img className="w-13 h-40" src={card.picture} alt="Movie" />
+
+                    </div>
+                    <div className='w-2/3 text-left'>
+                        <h2 className="">{card.category}</h2>
+                        <h2 className="">{card.title}</h2>
+                        <p>{card.price}</p>
+                        <button className="bg-blue-700 p-2 rounded-md h-9">View Details</button>
+
+                    </div>
+                </div>
+              
+
+            </div>)}
+
         </div>
+        <div className='mt-5'> <button className='bg-green-700 rounded-md p-2 w-24'>See All</button>
+         </div>
+        </>
+        
         
     );
 };

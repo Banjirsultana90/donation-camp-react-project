@@ -18,4 +18,12 @@ const savedDonation=id=>{
 
     }
 }
+if (!localStorage.getItem('donationPageLoaded')) {
+    localStorage.clear(); 
+    localStorage.setItem('donationPageLoaded', 'true'); 
+  }
 export {savedDonation,getstoreddonation}
+
+
+
+
