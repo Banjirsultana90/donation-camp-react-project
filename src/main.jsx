@@ -10,6 +10,7 @@ import Root from './Components/Root/Root.jsx';
 import Error from './Pages/Error/Error.jsx';
 import Home from './Components/Home/Home.jsx';
 import Carddetails from './Components/Carddetails/Carddetails.jsx';
+import Donation from './Pages/Donation/Donation.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,6 +24,14 @@ const router = createBrowserRouter([
       path:'/card/:id',
       element:<Carddetails></Carddetails>,
       loader:()=>fetch('data.json')
+    },
+
+    {
+      path:'/Donations',
+      element:<Donation></Donation>,
+      loader:()=>fetch('/data.json')
+
+
     }
   ]
 
